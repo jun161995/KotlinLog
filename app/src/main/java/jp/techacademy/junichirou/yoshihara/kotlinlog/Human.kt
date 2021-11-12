@@ -4,8 +4,9 @@ import android.util.Log
 
 open class Human: Animal, Thinkable {
     // 引数付きコンストラクタ
-    constructor(name: String, age: Int, hobby: String): super(name, age, hobby) {
-    }    init {
+    var hobby: String
+    constructor(name: String, age: Int, hobby: String): super(name, age) {
+        this.hobby = hobby}    init {
         // 処理
     }
 
